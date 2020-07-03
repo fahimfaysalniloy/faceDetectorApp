@@ -1,0 +1,12 @@
+//getting DOM elements
+const video = document.querySelector(".webcam"); //users webcam
+
+const canvas = document.querySelector(".video"); // where we dump the video
+
+const ctx = canvas.getContext("2d");
+const faceCanvas = document.querySelector(".face"); // for face detecting and censorship
+
+const faceCtx = faceCanvas.getContext("2d"); //creat new facedetector
+
+const faceDetector = new FaceDetector();
+console.log(faceDetector);
